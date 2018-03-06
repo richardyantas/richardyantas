@@ -33,7 +33,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 wow fadeInRight">
 
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/81rhHlJ6xVo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V0IDbeQfDIw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
             <p>This video explain the implementation process acording to paper.</p>
           </div>
@@ -84,10 +84,10 @@
                       <div class="media accordion-inner">
                         <!--Todo: remplazar la ruta de los slides-->
                         <div class="media accordion-inner">
-                          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRkszduPF5lkxH-nxrH-90OeaBIYhb43yAkpb8FzqZaYUDyeNE73k5FZjAedGgEJvYRfYQlNsXrQlM8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSP5XGYbxw-fZ7HPbOLBCWGTGljESdKJuj05EAmIoiBIj9TINldsUs2h2szTz1YHoy4BK09SflWz-la/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>              
                         </div>
                         <div class="media-body">
-                          <a href="https://docs.google.com/presentation/d/1OzwOPqfGKlGzLr7ivuhjZxJapNrSUFYZeAFMMINMR28/edit?usp=sharing">
+                          <a href="https://docs.google.com/presentation/d/1GOHSwMtksikaj16C1y59ZkItrQkX_6MiJ7kSREKb6AM/edit?usp=sharing">
                             <p>Los Slides se encuentran disponibles con google docs.</p>
                           </a>
                           
@@ -118,10 +118,133 @@
           <div class="col-md-6 col-md-offset-3">
             <h2>Detalles de implementación</h2>
             <hr>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+            <p class="lead">Procedimiento de la implementacion del "Procedural Modelling of Urban Road Networks"</p>
+            <p>Abstract: En base al trabajo de investigación desarrollado por Jan benes autor principal, se realizó un procedimiento de implementación, mostrando de este modo cada una de las etapas de desarrollo de la estructura de datos principales así como  cada una de los algoritmos usados tanto en el  crecimiento de carreteras menores y mayores y la simulación de tráfico.</p>
           </div>
-        </div>
 
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/1.png" class="img-responsive center imageMediana">
+            </div>
+
+          </div>
+
+          <p>Dentro de nuestro esquema general es importante resaltar inicializar primero nuestras condiciones iniciales, como el terreno de elevación, condiciones ambientes como lagos, ríos o zonas prohibidas a nivel geográfico.Se presentará desde luego un simulación de crecimiento de con funciones como crecimiento de carreteras menores, simulación de tráfico y crecimiento de carreteras mayores, como se muestra en el siguiente esquema.</p>
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/2.png" class="img-responsive center imageMediana">
+            </div>
+
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 1. Esquema general de desarrollo</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/3.png" class="img-responsive center imageMediana">
+            </div>
+
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 2. Esquema evolutivo de las carreteras</p>
+            </div>
+          </div>
+
+          
+
+          <p>Luego de tener definido las ciudades vecinas como algunos de nuestros núcleos, podemos unir estos últimos usando algunos algoritmos de rutas mínimas en el paper no mencionar cual, sin embargo en el avance de implementación realizado usamos el A*  como shortest path algorithm. 
+          Otro punto a tomar en cuenta es que los puntos de intersección osea los núcleos lo define el investigador, cabe resaltar que a partir de estos puntos de intersección se procederá a la siguiente etapa que es el crecimiento de las carreteras menores. 
+          </p>
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/4.png" class="img-responsive center imageMediana">
+            </div>          
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 3. Algoritmo de pathfinding usando A*</p>
+            </div>
+          </div>
+
+           
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/5.png" class="img-responsive center imageMediana">
+            </div>
+
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 4. Adicion de zonas de entorno ambiental</p>
+            </div>
+          </div>
+
+          <p>Es importante señalar que dado que se tienen a las intersecciones como núcleos y que desde estos se generarán las carreteras menores, tomando en cuenta núcleos vecinos que podría ser colegios, universidades,etc definidos por el investigador. El patrón de crecimiento, en el paper mencionan algunos tipos el más interesante es el de manhattan que tiene un patrón de orden  los demás son consideradas ciudades antiguas, en nuestra avance se usa el patrón de ciudades antiguas que es el que mejor se acerca a la realidad.</p>   
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/6.png" class="img-responsive center imageMediana">
+            </div>
+
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 5. Algoritmo de desarrollo de carreteras menores</p>
+            </div>
+          </div>
+
+          <p>Proceso de simulacion de trafico que tiene como consecuencia el desarrollo de las nuevas carreteras principales</p>
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/7.png" class="img-responsive center imageMediana">
+            </div>
+
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 6. Simulacion de trafico</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/8.png" class="img-responsive center imageMediana">
+            </div>
+
+            <div class="col-md-12">
+               <p class="imagedesc">Figura 7. Resultados de simulación</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+                 <img src="images/9.png" class="img-responsive center imageMediana">
+            </div>
+          </div>
+
+
+          <div class="row">
+  <div class="col-md-12">
+      <div class="container">  
+        <button type="button" class="btn btn-danger" id="step" onclick="steps()">Step</button>
+        <canvas id="canvas"></canvas>  
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Path <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a onclick="showMajorRoads();">Major Roads</a></li>
+              <li><a onclick="showMinorRoads();">Minor Roads</a></li>
+              <li><a onclick="trafficSimulation();">Traffic Level</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Map <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a onclick="showGraph()">Graph</a></li>
+            <li><a onclick="showPerlin()">Perlin Noise</a></li>
+            <li><a onclick="showWater()">Water</a></li>          
+          </ul>
+        </div>
+    </div>
+  </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -164,6 +287,21 @@
         </div>
       </div>
     </footer>
+
+    <link rel="stylesheet" type="text/css" href="4/src/bootstrap.min.css">
+    <script type="text/javascript" src="4/src/jquery.min.js"></script>
+    <script type="text/javascript" src="4/src/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="4/css/app.css">
+    <script type="text/javascript" src="4/js/events.js"></script>
+    <script type="text/javascript" src="4/js/pq.js"></script>
+    <script type="text/javascript" src="4/js/map.js"></script>  
+    <script type="text/javascript" src="4/js/CGraph.js"></script>
+    <script type="text/javascript" src="4/js/utils.js"></script>
+    <script type="text/javascript" src="4/js/config.js"></script>
+    <script type="text/javascript" src="4/js/app.js"></script>
+
+
+
     <!--/#footer-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.js"></script>
