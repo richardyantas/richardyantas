@@ -7,10 +7,6 @@
 - 🌱 I’m a machine learning engineer
 - 📫 How to reach me: <a href="https://www.linkedin.com/in/richard-valentin-yantas-alcantara-0b3b2a6a/">@richardyantas</a> 
 
-
-![Github stats](https://github-readme-stats.vercel.app/api?username=richardyantas&theme=highcontrast&show_icons=true&count_private=true)
-![Top Languages Card](https://github-readme-stats.vercel.app/api/top-langs/?username=richardyantas&layout=compact)
-
 ## My Repos
 
 [![sthocastic-hybrid-games](https://github-readme-stats.vercel.app/api/pin/?username=richardyantas&repo=sthocastic-hybrid-games&show_owner=true)](https://github.com/richardyantas/sthocastic-hybrid-games.git)
