@@ -1,3 +1,11 @@
+# Documentation about tje project:
+
+## setting up the project
+
+`create-react-app blog`
+`yarn install`
+`yarn add react-motion styled-components`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
