@@ -25,31 +25,39 @@ code {
   margin: 0 auto;
   display: flex;
   justify-content: row;
-  outline: 1px solid blue;
 }
 
 .header {
   height: 50px;
-  text-align: center;
+  /* outline: 1px solid blue; */
+}
+
+.logo {
+  margin-left: 200px;
+  background-size: 10%;
+  /* outline: 1px solid red; */
 }
 
 .body {
   width: 75%;
-  outline: 1px solid green;
+
   font-family: Gudea, sans-serif;
   font-size: 15px;
+  overflow: auto;
+  /* background-color: white; */
 }
 
 .menu {
   width: 25%;
   padding-left: 0px;
+  margin-top: 80px;
 }
 
 .menu__list {
   margin: 0 0 0 0;
   list-style-type: none;
   height: auto;
-  outline: 1px solid green;
+
   padding-left: 0px;
 }
 
@@ -65,7 +73,7 @@ code {
   margin-bottom: 1px;
   background-repeat: no-repeat;
   background-size: 140px 25px;
-  outline: 1px solid blueviolet;
+  cursor: pointer;
 }
 
 .menu__sublist {
@@ -75,52 +83,47 @@ code {
   /* height: 100%; */
   list-style-type: none;
   margin-top: 1px;
-  outline: 1px solid red;
+
   margin-left: 50px;
   padding-left: 0px;
   padding-bottom: 0px;
 
   /* transition: all 0.5s ease; */
   animation: FadeIn 1.5s linear;
-  animation-fill-mode: both;
+  /* animation-fill-mode: both; */
   overflow: hidden;
 }
 
 .menu__subitem {
   color: hsl(0deg 0% 87%);
-  text-decoration: none;
   display: block;
+  text-decoration: none;
   width: 126px;
   height: 24px;
   font-family: Gudea, sans-serif;
-  /* object-fit: contain; */
   padding-left: 10px;
   margin-bottom: 1px;
   background-repeat: no-repeat;
   background-size: 140px 25px;
+  cursor: pointer;
 }
-
-/* subitems inside of window */
-/* Limit the height */
 
 @keyframes FadeIn {
   from {
-    /* height: 0px; */
     max-height: 0;
   }
-  /* 50% {
-    height: 50px;
-  } */
   to {
-    /* height: length; */
     max-height: 15em;
   }
-  /* from {
-    height: 0%;
+}
+
+@keyframes FadeOut {
+  from {
+    max-height: 15em;
   }
   to {
-    height: 100%;
-  } */
+    max-height: 0;
+  }
 }
 
 .menu__subitem:hover {
@@ -143,15 +146,3 @@ code {
 .section loading {
   text-align: center;
 }
-
-/* @keyframes growDown {
-  0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.1);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-} */
