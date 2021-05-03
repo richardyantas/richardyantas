@@ -17,18 +17,20 @@ export const MENU = [
       {
         id: "3",
         name: "project1",
-        children: [],
-        // children: [
-        //   {
-        //     name: "project11",
-        //     children: [],
-        //     status: noExpandable,
-        //     url:
-        //       "https://notion-api.splitbee.io/v1/page/ed98a1529f1241a69a03fb0df7abbeb2",
-        //   },
-        // ],
-        url:
-          "https://notion-api.splitbee.io/v1/page/c8161c2503784801ba280b228dbdc8f9",
+        children: [
+          {
+            name: "project11",
+            children: [],
+            url:
+              "https://notion-api.splitbee.io/v1/page/c8161c2503784801ba280b228dbdc8f9",
+          },
+          {
+            name: "project12",
+            children: [],
+            url:
+              "https://notion-api.splitbee.io/v1/page/ed98a1529f1241a69a03fb0df7abbeb2",
+          },
+        ],
       },
       {
         name: "project2",

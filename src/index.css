@@ -57,7 +57,7 @@ code {
   margin: 0 0 0 0;
   list-style-type: none;
   height: auto;
-
+  width: 100%;
   padding-left: 0px;
 }
 
@@ -77,7 +77,8 @@ code {
 }
 
 .menu__sublist {
-  width: 136px;
+  /* This par is very important */
+  width: 186px;
   /* height: fit-content; */
   height: auto;
   /* height: 100%; */
@@ -91,7 +92,7 @@ code {
   /* transition: all 0.5s ease; */
   animation: FadeIn 1.5s linear;
   /* animation-fill-mode: both; */
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .menu__subitem {
@@ -106,7 +107,39 @@ code {
   background-repeat: no-repeat;
   background-size: 140px 25px;
   cursor: pointer;
+  
 }
+
+.menu__subsublist{
+  width: 136px;
+  height: 100%;
+  list-style-type: none;
+  margin-top: 1px;
+  margin-left: 50px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  /* transition: all 0.5s ease; */
+  animation: FadeIn 1.5s linear;
+  /* animation-fill-mode: both; */
+  
+  overflow-y: hidden;
+}
+
+.menu__subsubitem{
+  color: hsl(0deg 0% 87%);
+  display: block;
+  text-decoration: none;
+  width: 126px;
+  height: 24px;
+  font-family: Gudea, sans-serif;
+  padding-left: 10px;
+  margin-bottom: 1px;
+  background-repeat: no-repeat;
+  background-size: 140px 25px;
+  cursor: pointer;
+}
+
+
 
 @keyframes FadeIn {
   from {
@@ -124,6 +157,15 @@ code {
   to {
     max-height: 0;
   }
+}
+
+.menu__subsubitem:hover {
+  color: hsl(225deg 33% 60%);
+}
+
+.menu__subsubitem a {
+  padding-top: 10px;
+  font-size: 14px;
 }
 
 .menu__subitem:hover {

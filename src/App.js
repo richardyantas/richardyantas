@@ -15,17 +15,20 @@ let urlPage =
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [blogMap, setBlogData] = useState({});
+  const [blogData, setBlogData] = useState({});
+  const [currPage, setCurrPage] = useState(urlPage);
 
   async function componentDidMount() {
-    const blogData = await fetch(urlPage).then((res) => res.json());
+    console.log("calling... useEffect ");
+    const blogDataFetched = await fetch(urlPage).then((res) => res.json());
     setLoading(false);
-    setBlogData(blogData);
+    setBlogData(blogDataFetched);
   }
 
   useEffect(() => {
+    console.log("use effect calling .. ");
     componentDidMount();
-  }, []);
+  }, [urlPage]);
 
   return (
     <div>
@@ -36,14 +39,11 @@ function App() {
         <nav className="menu">
           <ul className="menu__list">
             {MENU.map((item, id) => (
-              // item.url ? (
               <Item
                 id={id}
-                // // id={idx}
                 name={item.name}
                 url={item.url || "0"}
                 children={[...item.children]}
-                // key={item.toString()}
               />
             ))}
           </ul>
@@ -61,7 +61,7 @@ function App() {
           </section>
         ) : (
           <div className="body">
-            <NotionRenderer blockMap={blogMap} />
+            <NotionRenderer blockMap={blogData} />
           </div>
         )}
       </div>
@@ -69,13 +69,11 @@ function App() {
   );
 }
 
-// function Item({ name, children, url }) {
 function Item(props) {
   const name = props.name || "naa";
   const children = props.children || [];
   const url = props.url;
   const [showItem, setShowItem] = useState(false);
-  const [showSubItem, setShowSubItem] = useState(false);
   return (
     <>
       <li
@@ -110,41 +108,6 @@ function Item(props) {
                 children={[...subItem.children] || []}
               />
             );
-            console.log(
-              "props1: ",
-              subItem.name,
-              subItem.url,
-              subItem.children
-            );
-            // return (
-            //   <li
-            //     className="menu__subitem"
-            //     onClick={() => {
-            //       subItem.children.length === 0
-            //         ? (urlPage = subItem.url)
-            //         : (urlPage = "0") && setShowSubItem(!showSubItem);
-            //     }}
-            //     // style={{ backgroundImage: `url(${noExpandable})` }}
-            //     style={{
-            //       backgroundImage: `url(${
-            //         subItem.children.length === 0
-            //           ? noExpandable
-            //           : showSubItem
-            //           ? expanded
-            //           : expandable
-            //       })`,
-            //     }}
-            //   >
-            //     <a>{subItem.name}</a>
-            //   </li>
-            // );
-
-            // console.log("props: ", subItem.name, subItem.url, subItem.children);
-            // return (
-            //   <li className="menu__subitem">
-            //     <a>{subItem.name}</a>
-            //   </li>
-            // );
           })}
         </ul>
       )}
@@ -182,6 +145,30 @@ function SubItem(props) {
       >
         <a>{name}</a>
       </li>
+      {showSubItem && (
+        <ul className="menu__subsublist">
+          {children.map((child) => {
+            return (
+              <li
+                className="menu__subsubitem"
+                onClick={() => {
+                  child.children.length === 0
+                    ? (urlPage = child.url)
+                    : (urlPage = "0");
+                  console.log("urlPage:", urlPage, "url: ", child.url);
+                }}
+                style={{
+                  backgroundImage: `url(${
+                    child.children.length === 0 ? noExpandable : expandable
+                  })`,
+                }}
+              >
+                <a>{child.name}</a>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </>
   );
 }
