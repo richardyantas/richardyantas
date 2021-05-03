@@ -10,24 +10,25 @@ import { MENU, noExpandable, expandable, expanded } from "./data.js";
 // add content and add demos
 // deploy on netlify or vercel or aws
 
-let urlPage =
+let startPage =
   "https://notion-api.splitbee.io/v1/page/ed98a1529f1241a69a03fb0df7abbeb2";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState({});
-  const [currPage, setCurrPage] = useState(urlPage);
+  const [urlPage, setUrlPage] = useState(startPage);
+  const [showItem, setShowItem] = useState(false);
+  const [showSubItem, setShowSubItem] = useState(false);
 
   async function componentDidMount() {
-    console.log("calling... useEffect ");
     const blogDataFetched = await fetch(urlPage).then((res) => res.json());
     setLoading(false);
     setBlogData(blogDataFetched);
   }
 
   useEffect(() => {
-    console.log("use effect calling .. ");
     componentDidMount();
+    console.log(":)", urlPage);
   }, [urlPage]);
 
   return (
@@ -39,12 +40,82 @@ function App() {
         <nav className="menu">
           <ul className="menu__list">
             {MENU.map((item, id) => (
-              <Item
-                id={id}
-                name={item.name}
-                url={item.url || "0"}
-                children={[...item.children]}
-              />
+              <>
+                <li
+                  className="menu__item"
+                  onClick={(e) => {
+                    item.children.length == 0
+                      ? setUrlPage(item.url)
+                      : setShowItem(!showItem) && setUrlPage("0");
+                  }}
+                  style={{
+                    backgroundImage: `url(${
+                      item.children.length == 0
+                        ? noExpandable
+                        : showItem
+                        ? expanded
+                        : expandable
+                    })`,
+                  }}
+                >
+                  <a>{item.name}</a>
+                </li>
+                {showItem && (
+                  <ul className="menu__sublist">
+                    {item.children.map((subItem, id) => {
+                      return (
+                        <>
+                          <li
+                            className="menu__subitem"
+                            onClick={() => {
+                              subItem.children.length === 0
+                                ? setUrlPage(subItem.url)
+                                : setUrlPage("0") &&
+                                  setShowSubItem(!showSubItem);
+                            }}
+                            style={{
+                              backgroundImage: `url(${
+                                subItem.children.length === 0
+                                  ? noExpandable
+                                  : showSubItem
+                                  ? expanded
+                                  : expandable
+                              })`,
+                            }}
+                          >
+                            <a>{subItem.name}</a>
+                          </li>
+                          {showSubItem && (
+                            <ul className="menu__subsublist">
+                              {subItem.children.map((child) => {
+                                return (
+                                  <li
+                                    className="menu__subsubitem"
+                                    onClick={() => {
+                                      child.children.length === 0
+                                        ? (urlPage = child.url)
+                                        : (urlPage = "0");
+                                    }}
+                                    style={{
+                                      backgroundImage: `url(${
+                                        child.children.length === 0
+                                          ? noExpandable
+                                          : expandable
+                                      })`,
+                                    }}
+                                  >
+                                    <a>{child.name}</a>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+                        </>
+                      );
+                    })}
+                  </ul>
+                )}
+              </>
             ))}
           </ul>
 
@@ -66,110 +137,6 @@ function App() {
         )}
       </div>
     </div>
-  );
-}
-
-function Item(props) {
-  const name = props.name || "naa";
-  const children = props.children || [];
-  const url = props.url;
-  const [showItem, setShowItem] = useState(false);
-  return (
-    <>
-      <li
-        key={props.id}
-        className="menu__item"
-        onClick={(e) => {
-          children.length == 0
-            ? (urlPage = url)
-            : (urlPage = "0") && setShowItem(!showItem);
-          console.log("urlPage:", urlPage, "url: ", url);
-        }}
-        style={{
-          backgroundImage: `url(${
-            children.length == 0
-              ? noExpandable
-              : showItem
-              ? expanded
-              : expandable
-          })`,
-        }}
-      >
-        <a>{name}</a>
-      </li>
-      {showItem && (
-        <ul className="menu__sublist">
-          {children.map((subItem, id) => {
-            return (
-              <SubItem
-                key={id}
-                name={subItem.name}
-                url={subItem.url || "0"}
-                children={[...subItem.children] || []}
-              />
-            );
-          })}
-        </ul>
-      )}
-    </>
-  );
-}
-
-function SubItem(props) {
-  const name = props.name;
-  const url = props.url;
-  const children = props.children || [];
-  const [showSubItem, setShowSubItem] = useState(false);
-  console.log("props hehe: ", name, url, children);
-  return (
-    <>
-      <li
-        className="menu__subitem"
-        onClick={() => {
-          children.length === 0
-            ? (urlPage = url)
-            : (urlPage = "0") && setShowSubItem(!showSubItem);
-
-          console.log("urlPage:", urlPage, "url: ", url);
-        }}
-        // style={{ backgroundImage: `url(${noExpandable})` }}
-        style={{
-          backgroundImage: `url(${
-            children.length === 0
-              ? noExpandable
-              : showSubItem
-              ? expanded
-              : expandable
-          })`,
-        }}
-      >
-        <a>{name}</a>
-      </li>
-      {showSubItem && (
-        <ul className="menu__subsublist">
-          {children.map((child) => {
-            return (
-              <li
-                className="menu__subsubitem"
-                onClick={() => {
-                  child.children.length === 0
-                    ? (urlPage = child.url)
-                    : (urlPage = "0");
-                  console.log("urlPage:", urlPage, "url: ", child.url);
-                }}
-                style={{
-                  backgroundImage: `url(${
-                    child.children.length === 0 ? noExpandable : expandable
-                  })`,
-                }}
-              >
-                <a>{child.name}</a>
-              </li>
-            );
-          })}
-        </ul>
-      )}
-    </>
   );
 }
 
