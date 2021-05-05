@@ -32,15 +32,14 @@ function App() {
   };
 
   async function componentDidMount() {
-    console.log("calling... useEffect ");
     const blogDataFetched = await fetch(urlPage).then((res) => res.json());
     setLoading(false);
     setBlogData(blogDataFetched);
   }
 
   useEffect(() => {
-    console.log("use effect calling .. ");
     componentDidMount();
+    console.log(":)", urlPage);
   }, [urlPage]);
 
   const tmp = MENU.filter((item) => {
