@@ -1,6 +1,8 @@
+# Package.json
 
-
+This is a project:
 https://github.com/richardyantas/richardyantas.git
+
 # Documentation about tje project:
 
 ## setting up the project

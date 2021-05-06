@@ -11,7 +11,6 @@ import { MENU, noExpandable, expandable, expanded } from "./data.js";
 // custom the icon on tab browser
 // add content and add demos
 // deploy on netlify or vercel or aws
-
 // test the animation on codesandbox
 // D3.js If anyone want to gain some knowledge please visit https://www.freecodecamp.org/learn
 // WebGL to simulate 3D dynamic movement
@@ -52,7 +51,7 @@ function App() {
     <Router>
       <div>
         <header className="header">
-          <img src="text5416.png" className="logo" />
+          <img src="logo.png" className="logo" />
         </header>
         <div className="container">
           <nav className="menu">
@@ -69,11 +68,35 @@ function App() {
               ))}
             </ul>
 
-            <a href="github.png" download>
+            {/* <a href="github.png" download>
               <a>Book</a>
-              {/* <img src="github.png" alt="W3Schools" width="104" height="142" /> */}
-              <img src="github.png" alt="W3Schools" />
-            </a>
+              <img src="github.png" alt="W3Schools" width="104" height="142" />
+            </a> */}
+            <div className="books">
+              <a
+                href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618"
+                target="_blank"
+              >
+                <img src="deeplearning.jpg" className="book" alt="W3Schools" />
+              </a>
+              <a
+                href="https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057"
+                target="_blank"
+              >
+                <img src="datascience.jpg" className="book" alt="W3Schools" />
+              </a>
+
+              <a
+                href="https://www.amazon.com/-/es/Himanshu-Singh/dp/1484262212"
+                target="_blank"
+              >
+                <img
+                  src="machinelearning.jpg"
+                  className="book"
+                  alt="W3Schools"
+                />
+              </a>
+            </div>
           </nav>
 
           {loading ? (
