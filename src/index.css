@@ -34,7 +34,7 @@ code {
 
 .logo {
   margin-left: 200px;
-  width: 250px;
+  width: 480px;
   background-size: 8%;
   /* outline: 1px solid red; */
 }
@@ -51,7 +51,7 @@ code {
 .menu {
   width: 25%;
   padding-left: 0px;
-  margin-top: 80px;
+  margin-top: 110px;
 }
 
 .menu__list {
@@ -66,14 +66,14 @@ code {
   color: hsl(0deg 0% 87%);
   text-decoration: none;
   display: block;
-  width: 126px;
-  height: 22px;
+  width: 150px;
+  height: 30px;
   font-family: Gudea, sans-serif;
   padding: 1px;
   padding-left: 10px;
   margin-bottom: 1px;
   background-repeat: no-repeat;
-  background-size: 140px 25px;
+  background-size: 164px 31px;
   cursor: pointer;
 }
 
@@ -100,13 +100,13 @@ code {
   color: hsl(0deg 0% 87%);
   display: block;
   text-decoration: none;
-  width: 126px;
-  height: 24px;
+  width: 150px;
+  height: 30px;
   font-family: Gudea, sans-serif;
   padding-left: 10px;
   margin-bottom: 1px;
   background-repeat: no-repeat;
-  background-size: 140px 25px;
+  background-size: 164px 31px;
   cursor: pointer;
 }
 
@@ -130,13 +130,13 @@ code {
   color: hsl(0deg 0% 87%);
   display: block;
   text-decoration: none;
-  width: 126px;
-  height: 24px;
+  width: 150px;
+  height: 30px;
   font-family: Gudea, sans-serif;
   padding-left: 10px;
   margin-bottom: 1px;
   background-repeat: no-repeat;
-  background-size: 140px 25px;
+  background-size: 164px 31px;
   cursor: pointer;
 }
 
@@ -164,7 +164,7 @@ code {
 
 .menu__subsubitem a {
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .menu__subitem:hover {
@@ -173,7 +173,12 @@ code {
 
 .menu__subitem a {
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.menu__item a {
+  padding-top: 10px;
+  font-size: 16px;
 }
 
 .link {
@@ -182,27 +187,27 @@ code {
 
 .books {
   margin-top: 10px;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .book {
-  width: 50%;
+  width: 65%;
   height: 30%;
 }
 
-.menu__item .link {
+/* .menu__item .link {
   font-size: 14px;
-}
+} */
 
 .menu__item:hover {
   color: hsl(225deg 33% 60%);
 }
 
-.menu__item:hover .link {
+/* .menu__item:hover .link {
   color: hsl(225deg 33% 60%);
-}
+} */
 
 .section loading {
   text-align: center;
