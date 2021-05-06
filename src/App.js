@@ -32,14 +32,13 @@ function App() {
 
   useEffect(() => {
     componentDidMount();
-    console.log(":)", urlPage);
   }, [urlPage]);
 
-  const tmp = MENU.filter((item) => {
-    return item.children.length == 0;
-  }).map((item, id) => <Route exact path={item.path} component={Item} />);
+  // const tmp = MENU.filter((item) => {
+  //   return item.children.length == 0;
+  // }).map((item, id) => <Route exact path={item.path} component={Item} />);
 
-  console.log(tmp);
+  // console.log(tmp);
 
   return (
     <Router>
@@ -50,6 +49,10 @@ function App() {
         <div className="container">
           <nav className="menu">
             <ul className="menu__list">
+              <img
+                src="nav-button_bottom-arrow.png"
+                style={{ display: `none` }}
+              />
               {MENU.map((item, id) => (
                 <Item
                   id={id}
@@ -124,9 +127,10 @@ function Item(props) {
   const [showItem, setShowItem] = useState(false);
   return (
     <>
+      {/* <li className="flicker"></li> */}
       <li
         style={{
-          backgroundImage: `url(${
+          backgroundImage: ` url(${
             children.length === 0
               ? noExpandable
               : showItem
@@ -145,6 +149,7 @@ function Item(props) {
         </Link> */}
         <a>{name}</a>
       </li>
+
       {showItem && (
         <ul className="menu__sublist">
           {children.map((subItem, id) => {

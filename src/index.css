@@ -12,13 +12,6 @@ body {
   background-repeat: repeat-x;
 }
 
-body:after {
-  display: none;
-  position: absolute;
-  z-index: -1;
-  content: url("images/nav-button_bottom-arrow.png");
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -70,8 +63,11 @@ code {
 }
 
 .menu__item {
-  background: url("images/nav-button_bottom-arrow.png"); /*Trick to avoid blinking :)*/
+  /* background-image: #edebed; */
+  /* background-image: url("images/nav-button_bottom-arrow.png"); */
+  /* background-image: url("images/nav-button_bottom-arrow.png"); Trick to avoid blinking :) */
   color: hsl(0deg 0% 87%);
+  /* content: url("images/nav-button_bottom-arrow.png"); */
   /* text-decoration: none; */
   display: block;
   width: 150px;
@@ -84,6 +80,21 @@ code {
   background-size: 164px 31px;
   cursor: pointer;
 }
+
+/* .flicker {
+  background-image: url("images/nav-button_bottom-arrow.png");
+  color: hsl(0deg 0% 87%);
+  width: 150px;
+  height: 30px;
+  font-family: Gudea, sans-serif;
+  padding: 1px;
+  padding-left: 10px;
+  margin-bottom: 1px;
+  background-repeat: no-repeat;
+  background-size: 164px 31px;
+  cursor: pointer;
+  display: none;
+} */
 
 .menu__sublist {
   /* This par is very important */
@@ -99,7 +110,7 @@ code {
   padding-bottom: 0px;
 
   /* transition: all 0.5s ease; */
-  animation: FadeIn 1.5s linear;
+  animation: FadeIn 0.5s linear;
   /* animation-fill-mode: both; */
   overflow-y: hidden;
 }
