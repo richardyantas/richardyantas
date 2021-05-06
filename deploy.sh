@@ -8,4 +8,4 @@ git commit -m "deploying .."
 git push -u origin master
 google-chrome https://richardyantas.github.io/richardyantas/
 echo "changing the public_url to development format ... "
-export PUBLIC_URL=http://localhost:3000/
+# export PUBLIC_URL=http://localhost:3000/
