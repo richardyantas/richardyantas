@@ -7,10 +7,7 @@ import "react-notion/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
 import { MENU, noExpandable, expandable, expanded } from "./data.js";
 
-// add url with reactjs routes and (MENU)arrows images
-// custom the icon on tab browser
 // add content and add demos
-// deploy on netlify or vercel or aws
 // test the animation on codesandbox
 // D3.js If anyone want to gain some knowledge please visit https://www.freecodecamp.org/learn
 // WebGL to simulate 3D dynamic movement
@@ -24,10 +21,7 @@ function App() {
   const [urlPage, setUrlPage] = useState(startPage);
 
   const pageSelection = (urlSelectedFromChildren) => {
-    console.log("kp:", urlSelectedFromChildren);
-    if (urlSelectedFromChildren != "0") {
-      setUrlPage(urlSelectedFromChildren);
-    }
+    setUrlPage(urlSelectedFromChildren);
   };
 
   async function componentDidMount() {
@@ -131,21 +125,19 @@ function Item(props) {
   return (
     <>
       <li
-        key={props.id}
-        className="menu__item"
-        onClick={(e) => {
-          children.length == 0
-            ? props.onClick(url)
-            : setShowItem(!showItem) && props.onClick("0");
-        }}
         style={{
           backgroundImage: `url(${
-            children.length == 0
+            children.length === 0
               ? noExpandable
               : showItem
               ? expanded
               : expandable
           })`,
+        }}
+        key={props.id}
+        className="menu__item"
+        onClick={(e) => {
+          children.length === 0 ? props.onClick(url) : setShowItem(!showItem);
         }}
       >
         {/* <Link to={path} className="link">
