@@ -70,7 +70,7 @@ code {
 }
 
 .menu__item {
-  background: url("images/nav-button_bottom-arrow.png"); /*Trick to avoid blinking :) */
+  /* background: url("images/nav-button_bottom-arrow.png"); Trick to avoid blinking :) */
   color: hsl(0deg 0% 87%);
   /* text-decoration: none; */
   display: block;
