@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="235.41516"
-     inkscape:cy="681.93007"
+     inkscape:cx="228.141"
+     inkscape:cy="698.29214"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -207,9 +207,9 @@
        d="m 209.0605,396.75093 -71.98796,-73.48767 12.17282,-0.094 c 14.25498,-0.11009 279.41579,-1.0748 279.46404,-1.01674 0.018,0.0216 1.36278,17.20881 2.98844,38.19374 1.85151,23.90021 2.82993,38.28024 2.61895,38.49122 -0.18524,0.18524 -34.6013,16.2366 -76.48013,35.6697 -41.87884,19.43309 -76.28843,35.42256 -76.46577,35.53216 -0.17734,0.1096 -32.71702,-32.87018 -72.31039,-73.2884 z"
        id="path5380"
        inkscape:connector-curvature="0"
+       transform="scale(0.26458333)"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       transform="scale(0.26458333)" />
+       inkscape:export-ydpi="96" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -234,6 +234,17 @@
          style="stroke-width:0.26458332;font-size:4.93888889px;fill:#ffffff">Entropy</tspan></text>
     <text
        xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="21.733631"
+       y="123.60342"
+       id="text5406"><tspan
+         sodipodi:role="line"
+         id="tspan5404"
+         x="21.733631"
+         y="123.60342"
+         style="font-size:4.23333311px;fill:#ffffff;stroke-width:0.26458332">Mind</tspan></text>
+    <text
+       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="54.239582"
        y="94.782738"
@@ -245,17 +256,24 @@
          style="stroke-width:0.26458332" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
        x="59.342262"
        y="97.806541"
        id="text5416"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
+         id="tspan5414"
          x="59.342262"
          y="97.806541"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none"
-         id="tspan5696">Boundary.ai </tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#800000;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+   style="fill:#008080;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
+   id="tspan5432">Entro</tspan>pyc</tspan><tspan
+         sodipodi:role="line"
+         x="59.342262"
+         y="106.62598"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none"
+         id="tspan5696">          boundary </tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot5422"
@@ -328,21 +346,5 @@
          x="63.405502"
          y="108.6704"
          style="fill:#ffffff;stroke-width:0.26458332" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.98999999;fill:#ffe680;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
-       x="66.712807"
-       y="109.5238"
-       id="text899"><tspan
-         sodipodi:role="line"
-         id="tspan897"
-         x="66.712807"
-         y="109.5238"
-         style="fill:#ffe680;stroke-width:0.26458332;-inkscape-font-specification:'AnjaliOldLipi, Normal';font-family:AnjaliOldLipi;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:4.23333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">Entropy is the price </tspan><tspan
-         sodipodi:role="line"
-         x="66.712807"
-         y="114.81546"
-         style="fill:#ffe680;stroke-width:0.26458332;-inkscape-font-specification:'AnjaliOldLipi, Normal';font-family:AnjaliOldLipi;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:4.23333333px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
-         id="tspan901">of structure</tspan></text>
   </g>
 </svg>
