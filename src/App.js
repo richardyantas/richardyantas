@@ -51,7 +51,7 @@ function App() {
     <Router>
       <div>
         <header className="header">
-          <img src="logo.png" className="logo" />
+          <img src="logo2.png" className="logo" />
         </header>
         <div className="container">
           <nav className="menu">
