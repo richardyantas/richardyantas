@@ -8,7 +8,7 @@ https://github.com/richardyantas/richardyantas.git
 ## setting up the project
 
 `create-react-app blog`
-`yarn install`
+`yarn install`  
 `yarn add react-motion styled-components`
 
 # Getting Started with Create React App

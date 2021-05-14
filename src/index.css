@@ -20,7 +20,7 @@ code {
 /* Body  */
 
 .container {
-  width: 1000px;
+  width: 1200px;
   height: 700px;
   margin: 0 auto;
   display: flex;
@@ -216,9 +216,19 @@ code {
   height: 30%;
 }
 
-/* .menu__item .link {
+.menu__item .link {
   font-size: 14px;
-} */
+}
+
+.menu__subitem .link {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.menu__subsubitem .link {
+  padding-top: 10px;
+  font-size: 16px;
+}
 
 .menu__item:hover {
   color: hsl(225deg 33% 60%);

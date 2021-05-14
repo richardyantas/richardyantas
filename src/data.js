@@ -1,6 +1,6 @@
-export const noExpandable = `nav-button.png`;
-export const expandable = `nav-button_right-arrow.png`;
-export const expanded = `nav-button_bottom-arrow.png`;
+export const noExpandable = `/nav-button.png`;
+export const expandable = `/nav-button_right-arrow.png`;
+export const expanded = `/nav-button_bottom-arrow.png`;
 
 export const MENU = [
   {
