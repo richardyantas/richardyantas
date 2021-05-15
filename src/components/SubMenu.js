@@ -3,68 +3,73 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const SidebarLink = styled(Link)`
-  display: flex;
-  color: #e1e9fc;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  list-style: none;
-  height: 60px;
+  color: white;
+  display: block;
+  width: 150px;
+  height: 30px;
+  font-family: Gudea, sans-serif;
+  padding: 1px;
+  padding-left: 10px;
+  margin-bottom: 1px;
   text-decoration: none;
-  font-size: 18px;
-
+  background-repeat: no-repeat;
+  background-size: 164px 31px;
+  vertical-align: middle;
+  background-image: ${({ subnav, item }) =>
+    item.subNav ? (subnav ? item.iconOpened : item.iconClosed) : item.icon};
   &:hover {
-    background: #252831;
-    border-left: 4px solid green;
+    color: hsl(225deg 33% 60%);
     cursor: pointer;
   }
 `;
 
 const SidebarLabel = styled.span`
+  height: 39px;
+  line-height: 29px;
   margin-left: 16px;
 `;
 
 const DropdownLink = styled(Link)`
-  background: #252831;
-  height: 60px;
-  padding-left: 3rem;
-  display: flex;
-  align-items: center;
+  color: hsl(0deg 0% 87%);
+  display: block;
+  width: 150px;
+  height: 30px;
+  font-family: Gudea, sans-serif;
+  padding: 1px;
+  padding-left: 10px;
+  margin-left: 40px;
+  margin-bottom: 1px;
   text-decoration: none;
-  color: #f5f5f5;
-  font-size: 18px;
-
+  background-repeat: no-repeat;
+  background-size: 164px 31px;
+  vertical-align: middle;
+  background-image: ${({ item }) => item.icon};
   &:hover {
-    background: green;
+    color: hsl(225deg 33% 60%);
     cursor: pointer;
   }
 `;
 
 const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
-
   const showSubnav = () => setSubnav(!subnav);
-
   return (
     <>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+      <SidebarLink
+        item={item}
+        subnav={subnav}
+        to={item.path}
+        onClick={showSubnav}
+      >
         <div>
-          {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
-        </div>
-        <div>
-          {item.subNav && subnav
-            ? item.iconOpened
-            : item.subNav
-            ? item.iconClosed
-            : null}
         </div>
       </SidebarLink>
       {subnav &&
+        item.subnav &&
         item.subNav.map((item, index) => {
           return (
-            <DropdownLink to={item.path} key={index}>
-              {item.icon}
+            <DropdownLink item={item} to={item.path} key={index}>
               <SidebarLabel>{item.title}</SidebarLabel>
             </DropdownLink>
           );
