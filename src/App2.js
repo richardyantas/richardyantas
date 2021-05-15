@@ -37,17 +37,10 @@ function App() {
     setLoading(false);
     setBlogData(blogDataFetched);
   }
-
   useEffect(() => {
-    // save states
     localStorage.setItem("urlPage", urlPage);
     componentDidMount();
   }, [urlPage]);
-
-  // const tmp = MENU.filter((item) => {
-  //   return item.children.length == 0;
-  // }).map((item, id) => <Route exact path={item.path} component={Item} />);
-  // console.log(tmp);
 
   return (
     <Router>
