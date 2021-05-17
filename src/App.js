@@ -52,7 +52,7 @@ function App() {
           <nav className="menu">
             <ul className="menu__list">
               <img
-                src="./nav-button_bottom-arrow.png"
+                src="/nav-button_bottom-arrow.png"
                 style={{ display: `none` }}
               />
               {MENU.map((item, id) => (
