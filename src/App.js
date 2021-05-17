@@ -4,7 +4,7 @@ import "react-notion/src/styles.css";
 // import "react-notion-x/src/styles.css";
 // import "rc-dropdown/assets/index.css";
 import "prismjs/themes/prism-tomorrow.css";
-import "katex/dist/katex.min.css";
+// import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import styled from "styled-components";
 import {
