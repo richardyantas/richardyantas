@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/richardyantas/static/css/main.2a57e413.chunk.css",
-    "main.js": "/richardyantas/static/js/main.59f45e5b.chunk.js",
-    "main.js.map": "/richardyantas/static/js/main.59f45e5b.chunk.js.map",
-    "runtime-main.js": "/richardyantas/static/js/runtime-main.568fe271.js",
-    "runtime-main.js.map": "/richardyantas/static/js/runtime-main.568fe271.js.map",
-    "static/css/2.f1164eb4.chunk.css": "/richardyantas/static/css/2.f1164eb4.chunk.css",
-    "static/js/2.d3f32ced.chunk.js": "/richardyantas/static/js/2.d3f32ced.chunk.js",
-    "static/js/2.d3f32ced.chunk.js.map": "/richardyantas/static/js/2.d3f32ced.chunk.js.map",
-    "static/js/3.815eb583.chunk.js": "/richardyantas/static/js/3.815eb583.chunk.js",
-    "static/js/3.815eb583.chunk.js.map": "/richardyantas/static/js/3.815eb583.chunk.js.map",
-    "index.html": "/richardyantas/index.html",
-    "static/css/2.f1164eb4.chunk.css.map": "/richardyantas/static/css/2.f1164eb4.chunk.css.map",
-    "static/css/main.2a57e413.chunk.css.map": "/richardyantas/static/css/main.2a57e413.chunk.css.map",
-    "static/js/2.d3f32ced.chunk.js.LICENSE.txt": "/richardyantas/static/js/2.d3f32ced.chunk.js.LICENSE.txt",
-    "static/media/katex.min.css": "/richardyantas/static/media/KaTeX_Typewriter-Regular.ea67dc3c.ttf"
+    "main.css": "http://richardyantas.github.io/richardyantas/static/css/main.2a57e413.chunk.css",
+    "main.js": "http://richardyantas.github.io/richardyantas/static/js/main.59f45e5b.chunk.js",
+    "main.js.map": "http://richardyantas.github.io/richardyantas/static/js/main.59f45e5b.chunk.js.map",
+    "runtime-main.js": "http://richardyantas.github.io/richardyantas/static/js/runtime-main.63bb18b9.js",
+    "runtime-main.js.map": "http://richardyantas.github.io/richardyantas/static/js/runtime-main.63bb18b9.js.map",
+    "static/css/2.549ae840.chunk.css": "http://richardyantas.github.io/richardyantas/static/css/2.549ae840.chunk.css",
+    "static/js/2.36ba0e7b.chunk.js": "http://richardyantas.github.io/richardyantas/static/js/2.36ba0e7b.chunk.js",
+    "static/js/2.36ba0e7b.chunk.js.map": "http://richardyantas.github.io/richardyantas/static/js/2.36ba0e7b.chunk.js.map",
+    "static/js/3.815eb583.chunk.js": "http://richardyantas.github.io/richardyantas/static/js/3.815eb583.chunk.js",
+    "static/js/3.815eb583.chunk.js.map": "http://richardyantas.github.io/richardyantas/static/js/3.815eb583.chunk.js.map",
+    "index.html": "http://richardyantas.github.io/richardyantas/index.html",
+    "static/css/2.549ae840.chunk.css.map": "http://richardyantas.github.io/richardyantas/static/css/2.549ae840.chunk.css.map",
+    "static/css/main.2a57e413.chunk.css.map": "http://richardyantas.github.io/richardyantas/static/css/main.2a57e413.chunk.css.map",
+    "static/js/2.36ba0e7b.chunk.js.LICENSE.txt": "http://richardyantas.github.io/richardyantas/static/js/2.36ba0e7b.chunk.js.LICENSE.txt",
+    "static/media/katex.min.css": "http://richardyantas.github.io/richardyantas/static/media/KaTeX_Typewriter-Regular.ea67dc3c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.568fe271.js",
-    "static/css/2.f1164eb4.chunk.css",
-    "static/js/2.d3f32ced.chunk.js",
+    "static/js/runtime-main.63bb18b9.js",
+    "static/css/2.549ae840.chunk.css",
+    "static/js/2.36ba0e7b.chunk.js",
     "static/css/main.2a57e413.chunk.css",
     "static/js/main.59f45e5b.chunk.js"
   ]
