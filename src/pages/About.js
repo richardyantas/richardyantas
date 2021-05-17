@@ -13,7 +13,7 @@ import * as RiIcons from "react-icons/ri";
 const urlPage =
   "https://notion-api.splitbee.io/v1/page/ed98a1529f1241a69a03fb0df7abbeb2";
 
-export const AboutUs = () => {
+export const About = () => {
   const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState({});
   async function componentDidMount() {
@@ -28,9 +28,16 @@ export const AboutUs = () => {
 
   return (
     <>
-      <h1>GeeksforGeeks About us</h1>
+      <h1>About</h1>
       {loading ? (
-        <h1>Loading...</h1>
+        <div class="spinner-box">
+          <div class="configure-border-1">
+            <div class="configure-core"></div>
+          </div>
+          <div class="configure-border-2">
+            <div class="configure-core"></div>
+          </div>
+        </div>
       ) : (
         // <pre>{JSON.stringify(blogData, null, 2)}</pre>
         <NotionRenderer blockMap={blogData} />
@@ -43,7 +50,6 @@ export const OurAim = () => {
   return (
     <div className="home">
       <h1>Aim</h1>
-      
     </div>
   );
 };

@@ -7,14 +7,14 @@ import "prismjs/themes/prism-tomorrow.css";
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import styled from "styled-components";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { AboutUs, OurAim, OurVision } from "./pages/AboutUs";
 import {
-  Projects,
-  ProjectsOne,
-  ProjectsTwo,
-  ProjectsThree,
-} from "./pages/projects/index";
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import { About, OurAim, OurVision } from "./pages/About";
+import { Projects } from "./pages/projects/index";
 import Contact from "./pages/ContactUs";
 
 const Scope = styled.div`
@@ -25,9 +25,22 @@ const Scope = styled.div`
 
 const Header = styled.div`
   height: 180px;
-  overflow: visible;
-  & > img {
+
+  & #logo {
+    width: 550px;
+    height: 300px;
     margin-left: -200px;
+    overflow: visible;
+    z-index: 30;
+  }
+
+  & #cat {
+    position: relative;
+    top: -0px;
+    left: 670px;
+    width: 300px;
+    height: 200px;
+    z-index: -100;
   }
 `;
 
@@ -45,17 +58,22 @@ function App() {
     <Router>
       <Scope>
         <Header>
-          <img src="/logo2.png" />
+          <img id="logo" src="/logo2.png" />
+          <img id="cat" src="/cat.gif" />
         </Header>
         <Body>
           <Sidebar />
           <Content>
             <Switch>
-              <Route path="/about-us" exact component={AboutUs} />
+              <Route
+                exact
+                path="/"
+                render={() => {
+                  return <Redirect to="/about" />;
+                }}
+              />
+              <Route path="/about" exact component={About} />
               <Route path="/projects/:id" exact component={Projects} />
-              {/* <Route path="/projects/1" exact component={ProjectsOne} />
-              <Route path="/projects/2" exact component={ProjectsTwo} />
-              <Route path="/projects/3" exact component={ProjectsThree} /> */}
               <Route path="/contact" exact component={Contact} />
             </Switch>
           </Content>

@@ -2,8 +2,8 @@ import React from "react";
 import * as FaIcons from "react-icons/fa";
 export const SidebarData = [
   {
-    title: "About Us",
-    path: "/about-us",
+    title: "About",
+    path: "/about",
     iconClosed: "url(/nav-button_right-arrow.png)",
     iconOpened: "url(/nav-button_bottom-arrow.png)",
     icon: "url(/nav-button.png)",
@@ -17,27 +17,24 @@ export const SidebarData = [
     icon: "url(/nav-button.png)",
     subNav: [
       {
-        title: "projects 1",
-        path: "/projects/9fa38b45c12647b68afec7587b944b20",
+        title: "Sthocastic H.G",
+        path: "/projects/55978965a31d4355b1190d0059189924",
         icon: "url(/nav-button.png)",
         subNav: [],
         cName: "sub-nav",
-        notion_id: "55978965a31d4355b1190d0059189924",
       },
       {
-        title: "projects 2",
+        title: "Urban Networks",
         path: "/projects/fb1b9e08f84842b39f014742343ccc4e",
         icon: "url(/nav-button.png)",
         subNav: [],
         cName: "sub-nav",
-        notion_id: "fb1b9e08f84842b39f014742343ccc4e",
       },
       {
-        title: "projects 3",
+        title: "Text Recognizer",
         path: "/projects/9fa38b45c12647b68afec7587b944b20",
         icon: "url(/nav-button.png)",
         subNav: [],
-        notion_id: "9fa38b45c12647b68afec7587b944b20",
       },
     ],
   },
@@ -47,7 +44,15 @@ export const SidebarData = [
     iconClosed: "url(/nav-button_right-arrow.png)",
     iconOpened: "url(/nav-button_bottom-arrow.png)",
     icon: "url(/nav-button.png)",
-    subNav: [],
+    subNav: [
+      {
+        title: "Flask API",
+        path: "/backend/55978965a31d4355b1190d0059189924",
+        icon: "url(/nav-button.png)",
+        subNav: [],
+        cName: "sub-nav",
+      },
+    ],
   },
   {
     title: "Machine learning",
