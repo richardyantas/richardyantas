@@ -1,26 +1,25 @@
 {
   "files": {
     "main.css": "/richardyantas/static/css/main.87361b6e.chunk.css",
-    "main.js": "/richardyantas/static/js/main.59f45e5b.chunk.js",
-    "main.js.map": "/richardyantas/static/js/main.59f45e5b.chunk.js.map",
-    "runtime-main.js": "/richardyantas/static/js/runtime-main.568fe271.js",
-    "runtime-main.js.map": "/richardyantas/static/js/runtime-main.568fe271.js.map",
-    "static/css/2.f1164eb4.chunk.css": "/richardyantas/static/css/2.f1164eb4.chunk.css",
-    "static/js/2.d3f32ced.chunk.js": "/richardyantas/static/js/2.d3f32ced.chunk.js",
-    "static/js/2.d3f32ced.chunk.js.map": "/richardyantas/static/js/2.d3f32ced.chunk.js.map",
-    "static/js/3.815eb583.chunk.js": "/richardyantas/static/js/3.815eb583.chunk.js",
-    "static/js/3.815eb583.chunk.js.map": "/richardyantas/static/js/3.815eb583.chunk.js.map",
+    "main.js": "/richardyantas/static/js/main.b528b20a.chunk.js",
+    "main.js.map": "/richardyantas/static/js/main.b528b20a.chunk.js.map",
+    "runtime-main.js": "/richardyantas/static/js/runtime-main.d42a7a59.js",
+    "runtime-main.js.map": "/richardyantas/static/js/runtime-main.d42a7a59.js.map",
+    "static/css/2.f8f71fe7.chunk.css": "/richardyantas/static/css/2.f8f71fe7.chunk.css",
+    "static/js/2.b2b6af84.chunk.js": "/richardyantas/static/js/2.b2b6af84.chunk.js",
+    "static/js/2.b2b6af84.chunk.js.map": "/richardyantas/static/js/2.b2b6af84.chunk.js.map",
+    "static/js/3.33f33e91.chunk.js": "/richardyantas/static/js/3.33f33e91.chunk.js",
+    "static/js/3.33f33e91.chunk.js.map": "/richardyantas/static/js/3.33f33e91.chunk.js.map",
     "index.html": "/richardyantas/index.html",
-    "static/css/2.f1164eb4.chunk.css.map": "/richardyantas/static/css/2.f1164eb4.chunk.css.map",
+    "static/css/2.f8f71fe7.chunk.css.map": "/richardyantas/static/css/2.f8f71fe7.chunk.css.map",
     "static/css/main.87361b6e.chunk.css.map": "/richardyantas/static/css/main.87361b6e.chunk.css.map",
-    "static/js/2.d3f32ced.chunk.js.LICENSE.txt": "/richardyantas/static/js/2.d3f32ced.chunk.js.LICENSE.txt",
-    "static/media/katex.min.css": "/richardyantas/static/media/KaTeX_Typewriter-Regular.ea67dc3c.ttf"
+    "static/js/2.b2b6af84.chunk.js.LICENSE.txt": "/richardyantas/static/js/2.b2b6af84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.568fe271.js",
-    "static/css/2.f1164eb4.chunk.css",
-    "static/js/2.d3f32ced.chunk.js",
+    "static/js/runtime-main.d42a7a59.js",
+    "static/css/2.f8f71fe7.chunk.css",
+    "static/js/2.b2b6af84.chunk.js",
     "static/css/main.87361b6e.chunk.css",
-    "static/js/main.59f45e5b.chunk.js"
+    "static/js/main.b528b20a.chunk.js"
   ]
 }
