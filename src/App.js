@@ -1,6 +1,8 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 import "react-notion/src/styles.css";
+// import "react-notion-x/src/styles.css";
+// import "rc-dropdown/assets/index.css";
 import "prismjs/themes/prism-tomorrow.css";
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
@@ -12,7 +14,7 @@ import {
   ProjectsOne,
   ProjectsTwo,
   ProjectsThree,
-} from "./pages/Projects";
+} from "./pages/projects/index";
 import Contact from "./pages/ContactUs";
 
 const Scope = styled.div`
@@ -50,16 +52,10 @@ function App() {
           <Content>
             <Switch>
               <Route path="/about-us" exact component={AboutUs} />
-              <Route path="/about-us/aim" exact component={OurAim} />
-              <Route path="/about-us/vision" exact component={OurVision} />
-              <Route path="/projects" exact component={Projects} />
-              <Route path="/projects/projects1" exact component={ProjectsOne} />
-              <Route path="/projects/projects2" exact component={ProjectsTwo} />
-              <Route
-                path="/projects/projects3"
-                exact
-                component={ProjectsThree}
-              />
+              <Route path="/projects/:id" exact component={Projects} />
+              {/* <Route path="/projects/1" exact component={ProjectsOne} />
+              <Route path="/projects/2" exact component={ProjectsTwo} />
+              <Route path="/projects/3" exact component={ProjectsThree} /> */}
               <Route path="/contact" exact component={Contact} />
             </Switch>
           </Content>
