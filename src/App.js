@@ -46,13 +46,13 @@ function App() {
     <Router>
       <div>
         <header className="header">
-          <img src="/logo2.png" className="logo" />
+          <img src="./logo2.png" className="logo" />
         </header>
         <div className="container">
           <nav className="menu">
             <ul className="menu__list">
               <img
-                src="/nav-button_bottom-arrow.png"
+                src="./nav-button_bottom-arrow.png"
                 style={{ display: `none` }}
               />
               {MENU.map((item, id) => (
@@ -76,13 +76,17 @@ function App() {
                 href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618"
                 target="_blank"
               >
-                <img src="/deeplearning.jpg" className="book" alt="W3Schools" />
+                <img
+                  src="./deeplearning.jpg"
+                  className="book"
+                  alt="W3Schools"
+                />
               </a>
               <a
                 href="https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1491912057"
                 target="_blank"
               >
-                <img src="/datascience.jpg" className="book" alt="W3Schools" />
+                <img src="./datascience.jpg" className="book" alt="W3Schools" />
               </a>
 
               <a
@@ -90,7 +94,7 @@ function App() {
                 target="_blank"
               >
                 <img
-                  src="/machinelearning.jpg"
+                  src="./machinelearning.jpg"
                   className="book"
                   alt="W3Schools"
                 />
