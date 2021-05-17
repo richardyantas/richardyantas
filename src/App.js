@@ -67,14 +67,14 @@ function App() {
             <Switch>
               <Route
                 exact
-                path="/"
+                path="/richardyantas"
                 render={() => {
-                  return <Redirect to="/about" />;
+                  return <Redirect to="/richardyantas/about" />;
                 }}
               />
-              <Route path="/about" exact component={About} />
-              <Route path="/projects/:id" exact component={Projects} />
-              <Route path="/contact" exact component={Contact} />
+              <Route path="/richardyantas/about" exact component={About} />
+              <Route path="/richardyantas/projects/:id" exact component={Projects} />
+              <Route path="/richardyantas/contact" exact component={Contact} />
             </Switch>
           </Content>
         </Body>
