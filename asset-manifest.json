@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "http://richardyantas.github.io/richardyantas/static/css/main.7a46a0b1.chunk.css",
-    "main.js": "http://richardyantas.github.io/richardyantas/static/js/main.a020e6e5.chunk.js",
-    "main.js.map": "http://richardyantas.github.io/richardyantas/static/js/main.a020e6e5.chunk.js.map",
-    "runtime-main.js": "http://richardyantas.github.io/richardyantas/static/js/runtime-main.9e00d791.js",
-    "runtime-main.js.map": "http://richardyantas.github.io/richardyantas/static/js/runtime-main.9e00d791.js.map",
-    "static/css/2.f8f71fe7.chunk.css": "http://richardyantas.github.io/richardyantas/static/css/2.f8f71fe7.chunk.css",
-    "static/js/2.825ca74b.chunk.js": "http://richardyantas.github.io/richardyantas/static/js/2.825ca74b.chunk.js",
-    "static/js/2.825ca74b.chunk.js.map": "http://richardyantas.github.io/richardyantas/static/js/2.825ca74b.chunk.js.map",
-    "static/js/3.bb751cbd.chunk.js": "http://richardyantas.github.io/richardyantas/static/js/3.bb751cbd.chunk.js",
-    "static/js/3.bb751cbd.chunk.js.map": "http://richardyantas.github.io/richardyantas/static/js/3.bb751cbd.chunk.js.map",
-    "index.html": "http://richardyantas.github.io/richardyantas/index.html",
-    "static/css/2.f8f71fe7.chunk.css.map": "http://richardyantas.github.io/richardyantas/static/css/2.f8f71fe7.chunk.css.map",
-    "static/css/main.7a46a0b1.chunk.css.map": "http://richardyantas.github.io/richardyantas/static/css/main.7a46a0b1.chunk.css.map",
-    "static/js/2.825ca74b.chunk.js.LICENSE.txt": "http://richardyantas.github.io/richardyantas/static/js/2.825ca74b.chunk.js.LICENSE.txt"
+    "main.css": "/richardyantas/static/css/main.87361b6e.chunk.css",
+    "main.js": "/richardyantas/static/js/main.5d30535d.chunk.js",
+    "main.js.map": "/richardyantas/static/js/main.5d30535d.chunk.js.map",
+    "runtime-main.js": "/richardyantas/static/js/runtime-main.d42a7a59.js",
+    "runtime-main.js.map": "/richardyantas/static/js/runtime-main.d42a7a59.js.map",
+    "static/css/2.f8f71fe7.chunk.css": "/richardyantas/static/css/2.f8f71fe7.chunk.css",
+    "static/js/2.b2b6af84.chunk.js": "/richardyantas/static/js/2.b2b6af84.chunk.js",
+    "static/js/2.b2b6af84.chunk.js.map": "/richardyantas/static/js/2.b2b6af84.chunk.js.map",
+    "static/js/3.33f33e91.chunk.js": "/richardyantas/static/js/3.33f33e91.chunk.js",
+    "static/js/3.33f33e91.chunk.js.map": "/richardyantas/static/js/3.33f33e91.chunk.js.map",
+    "index.html": "/richardyantas/index.html",
+    "static/css/2.f8f71fe7.chunk.css.map": "/richardyantas/static/css/2.f8f71fe7.chunk.css.map",
+    "static/css/main.87361b6e.chunk.css.map": "/richardyantas/static/css/main.87361b6e.chunk.css.map",
+    "static/js/2.b2b6af84.chunk.js.LICENSE.txt": "/richardyantas/static/js/2.b2b6af84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9e00d791.js",
+    "static/js/runtime-main.d42a7a59.js",
     "static/css/2.f8f71fe7.chunk.css",
-    "static/js/2.825ca74b.chunk.js",
-    "static/css/main.7a46a0b1.chunk.css",
-    "static/js/main.a020e6e5.chunk.js"
+    "static/js/2.b2b6af84.chunk.js",
+    "static/css/main.87361b6e.chunk.css",
+    "static/js/main.5d30535d.chunk.js"
   ]
 }
