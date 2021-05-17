@@ -46,13 +46,13 @@ function App() {
     <Router>
       <div>
         <header className="header">
-          <img src="/logo2.png" className="logo" />
+          <img src="./logo2.png" className="logo" />
         </header>
         <div className="container">
           <nav className="menu">
             <ul className="menu__list">
               <img
-                src="/nav-button_bottom-arrow.png"
+                src="./nav-button_bottom-arrow.png"
                 style={{ display: `none` }}
               />
               {MENU.map((item, id) => (
