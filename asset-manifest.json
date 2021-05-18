@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/richardyantas/static/css/main.87361b6e.chunk.css",
-    "main.js": "/richardyantas/static/js/main.31c69779.chunk.js",
-    "main.js.map": "/richardyantas/static/js/main.31c69779.chunk.js.map",
+    "main.css": "/richardyantas/static/css/main.2a57e413.chunk.css",
+    "main.js": "/richardyantas/static/js/main.3720b2b7.chunk.js",
+    "main.js.map": "/richardyantas/static/js/main.3720b2b7.chunk.js.map",
     "runtime-main.js": "/richardyantas/static/js/runtime-main.d42a7a59.js",
     "runtime-main.js.map": "/richardyantas/static/js/runtime-main.d42a7a59.js.map",
     "static/css/2.f8f71fe7.chunk.css": "/richardyantas/static/css/2.f8f71fe7.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.33f33e91.chunk.js.map": "/richardyantas/static/js/3.33f33e91.chunk.js.map",
     "index.html": "/richardyantas/index.html",
     "static/css/2.f8f71fe7.chunk.css.map": "/richardyantas/static/css/2.f8f71fe7.chunk.css.map",
-    "static/css/main.87361b6e.chunk.css.map": "/richardyantas/static/css/main.87361b6e.chunk.css.map",
+    "static/css/main.2a57e413.chunk.css.map": "/richardyantas/static/css/main.2a57e413.chunk.css.map",
     "static/js/2.b2b6af84.chunk.js.LICENSE.txt": "/richardyantas/static/js/2.b2b6af84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d42a7a59.js",
     "static/css/2.f8f71fe7.chunk.css",
     "static/js/2.b2b6af84.chunk.js",
-    "static/css/main.87361b6e.chunk.css",
-    "static/js/main.31c69779.chunk.js"
+    "static/css/main.2a57e413.chunk.css",
+    "static/js/main.3720b2b7.chunk.js"
   ]
 }
