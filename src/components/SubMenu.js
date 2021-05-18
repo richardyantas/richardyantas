@@ -70,7 +70,7 @@ const SubMenu = ({ item }) => {
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
-        <img src="/nav-button_bottom-arrow.png" style={{ display: `none` }} />
+        <img src="./nav-button_bottom-arrow.png" style={{ display: `none` }} />
       </SidebarLink>
       {subnav &&
         item.subNav.map((item, index) => {

@@ -59,7 +59,7 @@ function App() {
       <Scope>
         <Header>
           <img id="logo" src="./logo2.png" />
-          <img id="cat" src="/cat.gif" />
+          <img id="cat" src="./cat.gif" />
         </Header>
         <Body>
           <Sidebar />
