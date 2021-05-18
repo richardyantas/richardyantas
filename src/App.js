@@ -58,8 +58,8 @@ function App() {
     <Router>
       <Scope>
         <Header>
-          <img id="logo" src="./logo2.png" />
-          <img id="cat" src="./cat.gif" />
+          <img id="logo" src="/logo2.png" />
+          <img id="cat" src="/cat.gif" />
         </Header>
         <Body>
           <Sidebar />
@@ -67,14 +67,14 @@ function App() {
             <Switch>
               <Route
                 exact
-                path="/richardyantas"
+                path="/"
                 render={() => {
-                  return <Redirect to="/richardyantas/about" />;
+                  return <Redirect to="/about" />;
                 }}
               />
-              <Route path="/richardyantas/about" exact component={About} />
-              <Route path="/richardyantas/projects/:id" exact component={Projects} />
-              <Route path="/richardyantas/contact" exact component={Contact} />
+              <Route path="/about" exact component={About} />
+              <Route path="/projects/:id" exact component={Projects} />
+              <Route path="/contact" exact component={Contact} />
             </Switch>
           </Content>
         </Body>

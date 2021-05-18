@@ -18,9 +18,9 @@ const SidebarLink = styled(Link)`
   background-image: ${({ subnav, item }) =>
     item.subNav.length > 0
       ? subnav
-        ? item.iconOpened
-        : item.iconClosed
-      : item.icon};
+        ? "url(/nav-button_bottom-arrow.png)"
+        : "url(/nav-button_right-arrow.png)"
+      : "url(/nav-button.png)"};
   &:hover {
     color: hsl(225deg 33% 60%);
     cursor: pointer;
@@ -48,7 +48,7 @@ const DropdownLink = styled(Link)`
   background-repeat: no-repeat;
   background-size: 164px 31px;
   vertical-align: middle;
-  background-image: ${({ item }) => item.icon};
+  background-image: url(/nav-button.png);
   &:hover {
     color: hsl(225deg 33% 60%);
     cursor: pointer;
@@ -70,6 +70,7 @@ const SubMenu = ({ item }) => {
         <div>
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
+        <img src="/nav-button_bottom-arrow.png" style={{ display: `none` }} />
       </SidebarLink>
       {subnav &&
         item.subNav.map((item, index) => {
