@@ -67,7 +67,7 @@ function App() {
             <Switch>
               <Route
                 exact
-                path="/richardyantas"
+                path="/"
                 render={() => {
                   return <Redirect to="/about" />;
                 }}
