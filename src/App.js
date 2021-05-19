@@ -58,8 +58,8 @@ function App() {
     <Router>
       <Scope>
         <Header>
-          <img id="logo" src="images/logo2.png" />
-          <img id="cat" src="images/cat.gif" />
+          <img id="logo" src="./images/logo2.png" />
+          <img id="cat" src="./images/cat.gif" />
         </Header>
         <Body>
           <Sidebar />
