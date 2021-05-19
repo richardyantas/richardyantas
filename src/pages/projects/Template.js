@@ -6,7 +6,7 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 import { NavProject } from "./style.js";
 
-export const NavProjectComp = () => {
+export const NavProjectComp = (props) => {
   const [point, setPoint] = useState(1);
   return (
     <div className="contact">
@@ -15,6 +15,7 @@ export const NavProjectComp = () => {
         <div className="project__icons">
           <div
             onClick={(e) => {
+              props.onClick(point);
               setPoint(1);
               document.getElementById("project__demo").style.background =
                 "hsl(0deg 0% 87%)";
@@ -52,6 +53,7 @@ export const NavProjectComp = () => {
           </div>
           <div
             onClick={(e) => {
+              props.onClick(point);
               setPoint(0);
               document.getElementById("project__description").style.background =
                 "hsl(0deg 0% 87%)";

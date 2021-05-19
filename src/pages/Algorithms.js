@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { NotionRenderer } from "react-notion";
 import { useParams } from "react-router";
 
-export const Backend = () => {
-  const { subtitle, id } = useParams();
+export const Algorithms = () => {
+  const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState({});
   async function componentDidMount() {
@@ -20,7 +20,7 @@ export const Backend = () => {
 
   return (
     <>
-      <h1>{subtitle}</h1>
+      <h1>Algorithms</h1>
       {loading ? (
         <div class="spinner-box">
           <div class="configure-border-1">

@@ -10,10 +10,16 @@ import { SidebarData } from "../../components/SidebarData";
 import { NavProjectComp } from "./Template";
 
 export const Projects = () => {
-  let { id } = useParams();
+  let { subtitle, id } = useParams();
   console.log("notionid:", id);
   const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState({});
+  const [optProject, setOptProject] = useState(false);
+
+  const demoOrDescription = (optSelected) => {
+    setOptProject(optSelected);
+  };
+
   async function componentDidMount() {
     const recordMap = await fetch(
       `https://notion-api.splitbee.io/v1/page/${id}`
@@ -26,8 +32,12 @@ export const Projects = () => {
   }, [id]);
   return (
     <div className="contact">
-      <h1>Projects</h1>
-      <NavProjectComp />
+      <h1>{subtitle}</h1>
+      <NavProjectComp onClick={demoOrDescription} />
+      <h4>
+        "dropdown menu which include demo and submenu topics and also a theme
+        option above"
+      </h4>
       {loading ? (
         <div class="spinner-box">
           <div class="configure-border-1">
@@ -37,8 +47,10 @@ export const Projects = () => {
             <div class="configure-core"></div>
           </div>
         </div>
+      ) : // <pre>{JSON.stringify(blogData, null, 2)}</pre>
+      optProject ? (
+        <a>This is a Demo</a>
       ) : (
-        // <pre>{JSON.stringify(blogData, null, 2)}</pre>
         <NotionRenderer blockMap={blogData} />
       )}
     </div>

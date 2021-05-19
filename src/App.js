@@ -14,6 +14,11 @@ import {
   Redirect,
 } from "react-router-dom";
 import { About, OurAim, OurVision } from "./pages/About";
+import { DataScience } from "./pages/DataScience";
+import { MachineLearning } from "./pages/MachineLearning";
+import { Algorithms } from "./pages/Algorithms";
+import { Backend } from "./pages/Backend";
+import { CloudComputing } from "./pages/CloudComputing";
 import { Projects } from "./pages/projects/index";
 import Contact from "./pages/ContactUs";
 
@@ -53,13 +58,15 @@ const Body = styled.div`
 const Content = styled.div`
   width: 80%;
 `;
+
+// issues related to styles on firefox and also images whow distortioned.
 function App() {
   return (
     <Router>
       <Scope>
         <Header>
           <img id="logo" src="/logo2.png" />
-          <img id="cat" src="/cat.gif" />
+          {/* <img id="cat" src="/cat.gif" /> */}
         </Header>
         <Body>
           <Sidebar />
@@ -69,12 +76,36 @@ function App() {
                 exact
                 path="/"
                 render={() => {
-                  return <Redirect to="/about" />;
+                  return (
+                    <Redirect to="/about/d53ab561c3bf4317b035ca9c08b60d7a" />
+                  );
                 }}
               />
-              <Route path="/about" exact component={About} />
-              <Route path="/projects/:id" exact component={Projects} />
+              <Route path="/about/:id" exact component={About} />
+              <Route
+                path="/projects/:subtitle/:id"
+                exact
+                component={Projects}
+              />
+              <Route
+                path="/data-science/:subtitle/:id"
+                exact
+                component={DataScience}
+              />
+              <Route
+                path="/machine-learning/:subtitle/:id"
+                exact
+                component={MachineLearning}
+              />
+              <Route path="/backend/:subtitle/:id" exact component={Backend} />
+              <Route
+                path="/cloud-computing/:subtitle/:id"
+                exact
+                component={CloudComputing}
+              />
+              <Route path="/algorithms/:id" exact component={Algorithms} />
               <Route path="/contact" exact component={Contact} />
+              {/* we can keep this foemat https://www.notion.so/fastAPI-503b2424eb3943668f01e05ab44d013c */}
             </Switch>
           </Content>
         </Body>

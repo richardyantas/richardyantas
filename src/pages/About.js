@@ -1,28 +1,22 @@
 import React from "react";
 // import { NotionAPI } from "notion-client"; // https://www.npmjs.com/package/notion-client  // cause problems!with http2
+// import { NotionRenderer } from "react-notion-x";
 import { useState, useEffect } from "react";
 import { NotionRenderer } from "react-notion";
-import { IconContext } from "react-icons/lib";
-import styled from "styled-components";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-import * as RiIcons from "react-icons/ri";
-// import { NotionRenderer } from "react-notion-x";
-
-const urlPage =
-  "https://notion-api.splitbee.io/v1/page/ed98a1529f1241a69a03fb0df7abbeb2";
+import { useParams } from "react-router";
 
 export const About = () => {
+  const { id } = useParams();
   const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState({});
   async function componentDidMount() {
-    const recordMap = await fetch(urlPage).then((res) => res.json());
+    const recordMap = await fetch(
+      `https://notion-api.splitbee.io/v1/page/${id}`
+    ).then((res) => res.json());
     setLoading(false);
     setBlogData(recordMap);
   }
   useEffect(() => {
-    // localStorage.setItem("urlPage", urlPage);
     componentDidMount();
   }, [blogData]);
 

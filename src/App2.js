@@ -88,7 +88,6 @@ function App() {
               >
                 <img src="./datascience.jpg" className="book" alt="W3Schools" />
               </a>
-
               <a
                 href="https://www.amazon.com/-/es/Himanshu-Singh/dp/1484262212"
                 target="_blank"
