@@ -78,7 +78,7 @@ export const SidebarData = [
     subNav: [
       {
         title: "Spark",
-        path: "/machine-learning/spark/90608dd258534f378f6948ba9183746e",
+        path: "/machine-learning/spark/03976ddf0e0f4818839f11c0bad7b7a3",
         subNav: [],
         cName: "sub-nav",
       },
